@@ -62,7 +62,7 @@ namespace PcBuild.Controllers
         }
 
         [HttpPost]
-        [Route("api/order/add")]
+        [Route("api/add")]
         public HttpResponseMessage Add(OrderDTO obj)
         {
             try
@@ -85,7 +85,7 @@ namespace PcBuild.Controllers
         }
 
         [HttpPost]
-        [Route("api/order/update")]
+        [Route("api/update")]
         public HttpResponseMessage Update(OrderDTO obj)
         {
             try
@@ -108,7 +108,7 @@ namespace PcBuild.Controllers
         }
 
         [HttpPost]
-        [Route("api/order/delete/{id}")]
+        [Route("api/delete/{id}")]
         public HttpResponseMessage Delete(int id)
         {
             try

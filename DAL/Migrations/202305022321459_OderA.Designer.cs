@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class Stable : IMigrationMetadata
+    public sealed partial class OderA : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Stable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(OderA));
         
         string IMigrationMetadata.Id
         {
-            get { return "202305021959326_Stable"; }
+            get { return "202305022321459_OderA"; }
         }
         
         string IMigrationMetadata.Source

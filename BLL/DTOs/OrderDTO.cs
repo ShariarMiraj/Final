@@ -22,5 +22,8 @@ namespace BLL.DTOs
         public string Location { get; set; }
         
         public string SelleBy { get; set; }
+
+        public int ProductId { get; set; }
+
     }
 }
