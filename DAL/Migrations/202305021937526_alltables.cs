@@ -3,10 +3,55 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class FixAll : DbMigration
+    public partial class alltables : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Admins",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Uname = c.String(nullable: false, maxLength: 100),
+                        Password = c.String(nullable: false, maxLength: 15),
+                        Name = c.String(nullable: false, maxLength: 100),
+                        Email = c.String(nullable: false, maxLength: 100),
+                        PhoneNumber = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Moderators",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Uname = c.String(nullable: false, maxLength: 100),
+                        Password = c.String(nullable: false, maxLength: 15),
+                        Name = c.String(nullable: false, maxLength: 100),
+                        Email = c.String(nullable: false, maxLength: 100),
+                        PhoneNumber = c.Int(nullable: false),
+                        AddedBy = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Admins", t => t.AddedBy, cascadeDelete: true)
+                .Index(t => t.AddedBy);
+            
+            CreateTable(
+                "dbo.SalesReports",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        MonthName = c.String(),
+                        TotalSales = c.Int(nullable: false),
+                        ReportedBy = c.Int(nullable: false),
+                        Admin_Id = c.Int(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Moderators", t => t.ReportedBy, cascadeDelete: true)
+                .ForeignKey("dbo.Admins", t => t.Admin_Id)
+                .Index(t => t.ReportedBy)
+                .Index(t => t.Admin_Id);
+            
             CreateTable(
                 "dbo.Carts",
                 c => new
@@ -99,6 +144,19 @@
                 .Index(t => t.pid);
             
             CreateTable(
+                "dbo.FeedBacks",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Date = c.DateTime(nullable: false),
+                        ReviewFeedBack = c.String(nullable: false, maxLength: 150),
+                        rid = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Reviews", t => t.rid, cascadeDelete: true)
+                .Index(t => t.rid);
+            
+            CreateTable(
                 "dbo.Users",
                 c => new
                     {
@@ -126,6 +184,19 @@
                 .Index(t => t.Oid)
                 .Index(t => t.Uid);
             
+            CreateTable(
+                "dbo.Tokens",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        TKey = c.String(nullable: false, maxLength: 100),
+                        CreatedAt = c.DateTime(nullable: false),
+                        ExpiredAt = c.DateTime(),
+                        SellerId = c.String(nullable: false),
+                        UserId = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
         }
         
         public override void Down()
@@ -136,13 +207,18 @@
             DropForeignKey("dbo.Reviews", "uid", "dbo.Users");
             DropForeignKey("dbo.Carts", "uid", "dbo.Users");
             DropForeignKey("dbo.Reviews", "pid", "dbo.Products");
+            DropForeignKey("dbo.FeedBacks", "rid", "dbo.Reviews");
             DropForeignKey("dbo.Orders", "SelleBy", "dbo.Sellers");
             DropForeignKey("dbo.ProductOrders", "pid", "dbo.Products");
             DropForeignKey("dbo.ProductOrders", "Oid", "dbo.Orders");
             DropForeignKey("dbo.Orders", "productby", "dbo.Products");
             DropForeignKey("dbo.Carts", "pid", "dbo.Products");
+            DropForeignKey("dbo.SalesReports", "Admin_Id", "dbo.Admins");
+            DropForeignKey("dbo.SalesReports", "ReportedBy", "dbo.Moderators");
+            DropForeignKey("dbo.Moderators", "AddedBy", "dbo.Admins");
             DropIndex("dbo.User_Order", new[] { "Uid" });
             DropIndex("dbo.User_Order", new[] { "Oid" });
+            DropIndex("dbo.FeedBacks", new[] { "rid" });
             DropIndex("dbo.Reviews", new[] { "pid" });
             DropIndex("dbo.Reviews", new[] { "uid" });
             DropIndex("dbo.ProductOrders", new[] { "pid" });
@@ -152,14 +228,22 @@
             DropIndex("dbo.Products", new[] { "SelleingBy" });
             DropIndex("dbo.Carts", new[] { "pid" });
             DropIndex("dbo.Carts", new[] { "uid" });
+            DropIndex("dbo.SalesReports", new[] { "Admin_Id" });
+            DropIndex("dbo.SalesReports", new[] { "ReportedBy" });
+            DropIndex("dbo.Moderators", new[] { "AddedBy" });
+            DropTable("dbo.Tokens");
             DropTable("dbo.User_Order");
             DropTable("dbo.Users");
+            DropTable("dbo.FeedBacks");
             DropTable("dbo.Reviews");
             DropTable("dbo.Sellers");
             DropTable("dbo.ProductOrders");
             DropTable("dbo.Orders");
             DropTable("dbo.Products");
             DropTable("dbo.Carts");
+            DropTable("dbo.SalesReports");
+            DropTable("dbo.Moderators");
+            DropTable("dbo.Admins");
         }
     }
 }

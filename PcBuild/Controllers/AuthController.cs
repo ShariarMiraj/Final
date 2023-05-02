@@ -57,7 +57,7 @@ namespace PcBuild.Controllers
         {
             try
             {
-                var res = AuthService.Authenticate(login.uname, login.Password);
+                var res = AuthService.UserAuthenticate(login.uname, login.Password);
                 if (res != null)
                 {
                     return Request.CreateResponse(HttpStatusCode.OK, res);

@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class FixAll2 : IMigrationMetadata
+    public sealed partial class alltables : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(FixAll2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(alltables));
         
         string IMigrationMetadata.Id
         {
-            get { return "202304291147592_FixAll2"; }
+            get { return "202305021937526_alltables"; }
         }
         
         string IMigrationMetadata.Source

@@ -59,6 +59,29 @@ namespace BLL.Services
             }
             return null;
         }
+        public static TokenDTO UserAuthenticate(string sname, string password)
+        {
+            var res = DataAccessFactory.UserAuthData().Authenticate(sname, password);
+            if (res)
+            {
+
+                var token = new Token();
+                token.SellerId = sname;
+                token.CreatedAt = DateTime.Now;
+                token.TKey = Guid.NewGuid().ToString();
+                var ret = DataAccessFactory.TokenData().Create(token);
+                if (ret != null)
+                {
+                    var cfg = new MapperConfiguration(c =>
+                    {
+                        c.CreateMap<Token, TokenDTO>();
+                    });
+                    var mapper = new Mapper(cfg);
+                    return mapper.Map<TokenDTO>(ret);
+                }
+            }
+            return null;
+        }
 
         public static bool IsTokenValid(string tkey)
         {
