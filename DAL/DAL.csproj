@@ -76,33 +76,9 @@
     <Compile Include="Interfaces\IRepoUsers.cs" />
     <Compile Include="Interfaces\IRepoZisan.cs" />
     <Compile Include="Interfaces\ISearch.cs" />
-    <Compile Include="Migrations\202304261903354_FixAll.cs" />
-    <Compile Include="Migrations\202304261903354_FixAll.designer.cs">
-      <DependentUpon>202304261903354_FixAll.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304280810146_AddFeedBackTable.cs" />
-    <Compile Include="Migrations\202304280810146_AddFeedBackTable.designer.cs">
-      <DependentUpon>202304280810146_AddFeedBackTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304280958531_AddTokenTable.cs" />
-    <Compile Include="Migrations\202304280958531_AddTokenTable.designer.cs">
-      <DependentUpon>202304280958531_AddTokenTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304280959405_fixTokenTable.cs" />
-    <Compile Include="Migrations\202304280959405_fixTokenTable.designer.cs">
-      <DependentUpon>202304280959405_fixTokenTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304281008105_modyfiTokenTable.cs" />
-    <Compile Include="Migrations\202304281008105_modyfiTokenTable.designer.cs">
-      <DependentUpon>202304281008105_modyfiTokenTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304291130115_FixAll1.cs" />
-    <Compile Include="Migrations\202304291130115_FixAll1.designer.cs">
-      <DependentUpon>202304291130115_FixAll1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304291147592_FixAll2.cs" />
-    <Compile Include="Migrations\202304291147592_FixAll2.designer.cs">
-      <DependentUpon>202304291147592_FixAll2.cs</DependentUpon>
+    <Compile Include="Migrations\202305021937526_alltables.cs" />
+    <Compile Include="Migrations\202305021937526_alltables.designer.cs">
+      <DependentUpon>202305021937526_alltables.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
@@ -143,26 +119,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202304261903354_FixAll.resx">
-      <DependentUpon>202304261903354_FixAll.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304280810146_AddFeedBackTable.resx">
-      <DependentUpon>202304280810146_AddFeedBackTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304280958531_AddTokenTable.resx">
-      <DependentUpon>202304280958531_AddTokenTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304280959405_fixTokenTable.resx">
-      <DependentUpon>202304280959405_fixTokenTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304281008105_modyfiTokenTable.resx">
-      <DependentUpon>202304281008105_modyfiTokenTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304291130115_FixAll1.resx">
-      <DependentUpon>202304291130115_FixAll1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304291147592_FixAll2.resx">
-      <DependentUpon>202304291147592_FixAll2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202305021937526_alltables.resx">
+      <DependentUpon>202305021937526_alltables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
