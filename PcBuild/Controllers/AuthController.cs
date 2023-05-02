@@ -13,7 +13,7 @@ namespace PcBuild.Controllers
     {
         
         [HttpPost]
-        [Route("api/login")]
+        [Route("api/Sellr/login")]
 
         public HttpResponseMessage Login(LoginModel login)
         {

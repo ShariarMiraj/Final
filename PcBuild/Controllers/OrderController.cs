@@ -1,5 +1,6 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using PcBuild.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,7 @@ namespace PcBuild.Controllers
             }
         }
 
+        [Logged]
         [HttpGet]
         [Route("api/orders/{id}/products")]
         public HttpResponseMessage OrderProduct(int id)
