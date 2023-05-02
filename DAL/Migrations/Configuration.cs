@@ -51,7 +51,7 @@
                     OrderQuantity = Guid.NewGuid().ToString().Substring(0, 10),
                     Location = Guid.NewGuid().ToString().Substring(0, 10),
                     SelleBy = "Seller-" + random.Next(1, 6),
-                    productby = random.Next(1, 9),
+                    ProductId = random.Next(1, 9),
                 });
             }
             for (int i = 1; i <= 50; i++)

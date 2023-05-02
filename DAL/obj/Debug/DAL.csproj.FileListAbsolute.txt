@@ -127,3 +127,5 @@ C:\Users\addhr\Source\Repos\Final\DAL\obj\Debug\DAL.dll
 C:\Users\addhr\Source\Repos\Final\DAL\obj\Debug\DAL.pdb
 C:\Users\addhr\Source\Repos\Final\DAL\obj\Debug\DAL.Migrations.Stable.resources
 C:\Users\addhr\Source\Repos\Final\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\addhr\source\repos\Final\DAL\obj\Debug\DAL.Migrations.addPO.resources
+C:\Users\addhr\source\repos\Final\DAL\obj\Debug\DAL.Migrations.addAAA.resources

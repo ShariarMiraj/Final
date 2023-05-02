@@ -80,6 +80,14 @@
     <Compile Include="Migrations\202305021959326_Stable.designer.cs">
       <DependentUpon>202305021959326_Stable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305022108162_addPO.cs" />
+    <Compile Include="Migrations\202305022108162_addPO.designer.cs">
+      <DependentUpon>202305022108162_addPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305022130364_addAAA.cs" />
+    <Compile Include="Migrations\202305022130364_addAAA.designer.cs">
+      <DependentUpon>202305022130364_addAAA.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -121,6 +129,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305021959326_Stable.resx">
       <DependentUpon>202305021959326_Stable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305022108162_addPO.resx">
+      <DependentUpon>202305022108162_addPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305022130364_addAAA.resx">
+      <DependentUpon>202305022130364_addAAA.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
