@@ -175,3 +175,4 @@ D:\Final\DAL\obj\Debug\DAL.pdb
 D:\Final\DAL\obj\Debug\DAL.Migrations.mir.resources
 D:\Final\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
 D:\Final\DAL\obj\Debug\DAL.Migrations.SllEma.resources
+D:\Final\DAL\obj\Debug\DAL.Migrations.ToSea.resources

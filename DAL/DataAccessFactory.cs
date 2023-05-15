@@ -100,5 +100,17 @@ namespace DAL
         {
             return new OrderDetailsRepo();
         }
+
+        public static IRepo<TopSearchSelleingproduct,string , TopSearchSelleingproduct> TopSearchSelleingproductdata()
+        {
+            return new TopSearchSelleingproductsRepo();
+        }
+
+        public static IRepo<Product, string, Product> TProductdata()
+        {
+            return new TSProducRepo();
+        }
+
+
     }
 }

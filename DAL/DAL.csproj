@@ -85,6 +85,10 @@
     <Compile Include="Migrations\202305151831351_SllEma.designer.cs">
       <DependentUpon>202305151831351_SllEma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305151909406_ToSea.cs" />
+    <Compile Include="Migrations\202305151909406_ToSea.designer.cs">
+      <DependentUpon>202305151909406_ToSea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -95,6 +99,7 @@
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\SalesReport.cs" />
     <Compile Include="Models\Token.cs" />
+    <Compile Include="Models\TopSearchSelleingproduct.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\User_Order.cs" />
     <Compile Include="PcBuildContext.cs" />
@@ -119,6 +124,8 @@
     <Compile Include="Repos\SalesReportRepo.cs" />
     <Compile Include="Repos\SellerRepo.cs" />
     <Compile Include="Repos\TokenRepo.cs" />
+    <Compile Include="Repos\TopSearchSelleingproductsRepo.cs" />
+    <Compile Include="Repos\TSProducRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305151831351_SllEma.resx">
       <DependentUpon>202305151831351_SllEma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305151909406_ToSea.resx">
+      <DependentUpon>202305151909406_ToSea.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

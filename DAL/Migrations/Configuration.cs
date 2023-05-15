@@ -14,7 +14,7 @@
 
         protected override void Seed(DAL.PcBuildContext context)
         {
-            for (int i = 1; i <= 5; i++)
+            /*for (int i = 1; i <= 5; i++)
             {
                 context.Sellers.AddOrUpdate(new Models.Seller
                 {
@@ -27,7 +27,7 @@
 
                 });
             }
-            /*Random random = new Random();
+            Random random = new Random();
             for (int i = 1; i <= 10; i++)
             {
                 context.Products.AddOrUpdate(new Models.Product
@@ -178,6 +178,19 @@
                    Status = Guid.NewGuid().ToString().Substring(0, 5),
                 });
             }*/
+
+            for (int i = 1; i <= 3; i++)
+            {
+                context.TopSearchSelleingproducts.AddOrUpdate(new Models.TopSearchSelleingproduct
+                {
+                    Id = i,
+                    TopProductName = Guid.NewGuid().ToString().Substring(0, 10),
+                    Count = i,
+                    Time = DateTime.Now,
+
+                });
+            }
+           
 
         }
     }
