@@ -76,6 +76,10 @@ namespace DAL
         {
             return new TokenRepo();
         }
+        public static IRepo<OrderDetails, int, bool> OrderDetailsData()
+        {
+            return new OrderDetailsRepo();
+        }
         public static IAuth<bool> AuthData()
         {
             return new SellerRepo();
@@ -91,6 +95,10 @@ namespace DAL
         public static IChange ChangePassData()
         {
             return new SellerRepo();
+        }
+        public static ITop<OrderDetails> TopSellingReport()
+        {
+            return new OrderDetailsRepo();
         }
     }
 }

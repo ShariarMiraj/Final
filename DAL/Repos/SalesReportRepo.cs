@@ -27,6 +27,16 @@ namespace DAL.Repos
             db.SalesReports.Remove(ex);
             return db.SaveChanges() > 0;
         }
+        //SORT
+
+        //public List<SalesReport> GetTop()
+        //{
+        //    var list =(from x in db.SalesReports
+        //               where x.MonthName.Equals("january")
+        //               select x).ToList();
+        //    return list ;
+            
+        //}
 
         public List<SalesReport> Read()
         {

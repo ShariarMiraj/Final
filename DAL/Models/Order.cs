@@ -29,10 +29,13 @@ namespace DAL.Models
         public  virtual Seller Seller { get; set; }
         public  virtual Product Product { get; set; }
         public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<OrderDetails> OrderDetails { get; set; }
+
 
         public Order ()
         {
             Products = new List<Product>();
+            OrderDetails = new List<OrderDetails>();    
         }
     }
 }

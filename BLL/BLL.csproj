@@ -53,6 +53,7 @@
     <Compile Include="DTOs\FeedBackDTO.cs" />
     <Compile Include="DTOs\ModeratorDTO.cs" />
     <Compile Include="DTOs\ModeratorSalesReportDTO.cs" />
+    <Compile Include="DTOs\OrderDetailsDTO.cs" />
     <Compile Include="DTOs\OrderDTO.cs" />
     <Compile Include="DTOs\OrderProductDTO.cs" />
     <Compile Include="DTOs\ProductCartDTO.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Services\ManageUserOrderService.cs" />
     <Compile Include="Services\ManageUserService.cs" />
     <Compile Include="Services\ModeratorService.cs" />
+    <Compile Include="Services\OrderDetailsService.cs" />
     <Compile Include="Services\OrderService.cs" />
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\SalersReportService.cs" />
