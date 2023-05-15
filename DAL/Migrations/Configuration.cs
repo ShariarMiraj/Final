@@ -22,12 +22,12 @@
                     Sname = "Seller-" + i,
                     Password = Guid.NewGuid().ToString().Substring(0, 10),
                     PhoneNumber = Guid.NewGuid().ToString().Substring(0, 10),
-                    Email = Guid.NewGuid().ToString().Substring(0, 10),
+                    Email = Guid.NewGuid().ToString().Substring(0, 35),
                     NidNumber = Guid.NewGuid().ToString().Substring(0, 10),
 
                 });
             }
-            Random random = new Random();
+            /*Random random = new Random();
             for (int i = 1; i <= 10; i++)
             {
                 context.Products.AddOrUpdate(new Models.Product
@@ -177,7 +177,7 @@
                    price = Guid.NewGuid().ToString().Substring(0, 5),
                    Status = Guid.NewGuid().ToString().Substring(0, 5),
                 });
-            }
+            }*/
 
         }
     }

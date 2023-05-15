@@ -81,6 +81,10 @@
     <Compile Include="Migrations\202305151803541_mir.designer.cs">
       <DependentUpon>202305151803541_mir.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305151831351_SllEma.cs" />
+    <Compile Include="Migrations\202305151831351_SllEma.designer.cs">
+      <DependentUpon>202305151831351_SllEma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -124,6 +128,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305151803541_mir.resx">
       <DependentUpon>202305151803541_mir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305151831351_SllEma.resx">
+      <DependentUpon>202305151831351_SllEma.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

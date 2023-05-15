@@ -88,6 +88,7 @@
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\SalersReportService.cs" />
     <Compile Include="Services\SearchService.cs" />
+    <Compile Include="Services\SellerPassChangeEmailService.cs" />
     <Compile Include="Services\SellerService.cs" />
   </ItemGroup>
   <ItemGroup>
