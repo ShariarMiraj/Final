@@ -102,9 +102,9 @@ namespace BLL.Services
             }
             var config = new MapperConfiguration(cfg => cfg.CreateMap<Product, ProductDTO>());
             var mapper = new Mapper(config);
-            var topBooksModel =mapper.Map<List<ProductDTO>>(topProducts);
+            var topProductDTO =mapper.Map<List<ProductDTO>>(topProducts);
 
-            return topBooksModel;
+            return topProductDTO;
         }
 
     }
