@@ -111,6 +111,10 @@ namespace DAL
             return new TSProducRepo();
         }
 
+        public static IRepo<SellerReview, int, bool> SellerReviewdata()
+        {
+            return new SellerRatingRepo();
+        }
 
     }
 }

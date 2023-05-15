@@ -177,7 +177,7 @@
                    price = Guid.NewGuid().ToString().Substring(0, 5),
                    Status = Guid.NewGuid().ToString().Substring(0, 5),
                 });
-            }*/
+            }
 
             for (int i = 1; i <= 3; i++)
             {
@@ -189,8 +189,25 @@
                     Time = DateTime.Now,
 
                 });
+            }*/
+
+            for (int i = 1; i < 5; i++)
+            {
+                context.SellerReviews.AddOrUpdate(new Models.SellerReview
+                {
+
+                    ReviewId = i,
+                    Sname = "Seller-" + i,
+                    Id = i,
+                    Rating = i,
+                    Comment = Guid.NewGuid().ToString().Substring(0, 10),
+                    CreatedAt = DateTime.Now,
+
+
+                });
+
             }
-           
+
 
         }
     }

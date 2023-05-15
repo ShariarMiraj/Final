@@ -89,6 +89,14 @@
     <Compile Include="Migrations\202305151909406_ToSea.designer.cs">
       <DependentUpon>202305151909406_ToSea.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202305152039281_SellRev.cs" />
+    <Compile Include="Migrations\202305152039281_SellRev.designer.cs">
+      <DependentUpon>202305152039281_SellRev.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305152042213_SellRevAgingUS.cs" />
+    <Compile Include="Migrations\202305152042213_SellRevAgingUS.designer.cs">
+      <DependentUpon>202305152042213_SellRevAgingUS.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -98,6 +106,7 @@
     <Compile Include="Models\ProductOrder.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\SalesReport.cs" />
+    <Compile Include="Models\SellerReview.cs" />
     <Compile Include="Models\Token.cs" />
     <Compile Include="Models\TopSearchSelleingproduct.cs" />
     <Compile Include="Models\User.cs" />
@@ -122,6 +131,7 @@
     <Compile Include="Repos\ProductRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\SalesReportRepo.cs" />
+    <Compile Include="Repos\SellerRatingRepo.cs" />
     <Compile Include="Repos\SellerRepo.cs" />
     <Compile Include="Repos\TokenRepo.cs" />
     <Compile Include="Repos\TopSearchSelleingproductsRepo.cs" />
@@ -141,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305151909406_ToSea.resx">
       <DependentUpon>202305151909406_ToSea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305152039281_SellRev.resx">
+      <DependentUpon>202305152039281_SellRev.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305152042213_SellRevAgingUS.resx">
+      <DependentUpon>202305152042213_SellRevAgingUS.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

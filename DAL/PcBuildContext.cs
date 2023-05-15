@@ -30,6 +30,8 @@ namespace DAL
 
         public DbSet<TopSearchSelleingproduct> TopSearchSelleingproducts { get;set; }
 
+        public DbSet<SellerReview> SellerReviews { get; set; }
+
 
     }
 }
