@@ -178,3 +178,29 @@ D:\Final\DAL\obj\Debug\DAL.Migrations.SllEma.resources
 D:\Final\DAL\obj\Debug\DAL.Migrations.ToSea.resources
 D:\Final\DAL\obj\Debug\DAL.Migrations.SellRev.resources
 D:\Final\DAL\obj\Debug\DAL.Migrations.SellRevAgingUS.resources
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\DAL.dll.config
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\DAL.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\DAL.pdb
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\System.Web.Optimization.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\WebGrease.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\bin\Debug\System.Web.Optimization.xml
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.Migrations.mir.resources
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.Migrations.SllEma.resources
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.Migrations.ToSea.resources
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.Migrations.SellRev.resources
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.Migrations.SellRevAgingUS.resources
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.dll
+C:\Users\Miraj\Desktop\Asp.Net Project\project\DAL\obj\Debug\DAL.pdb
