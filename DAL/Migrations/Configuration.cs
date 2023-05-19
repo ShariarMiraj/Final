@@ -14,7 +14,7 @@
 
         protected override void Seed(DAL.PcBuildContext context)
         {
-            /*for (int i = 1; i <= 5; i++)
+            for (int i = 1; i <= 5; i++)
             {
                 context.Sellers.AddOrUpdate(new Models.Seller
                 {
@@ -189,7 +189,7 @@
                     Time = DateTime.Now,
 
                 });
-            }*/
+            }
 
             for (int i = 1; i < 5; i++)
             {
